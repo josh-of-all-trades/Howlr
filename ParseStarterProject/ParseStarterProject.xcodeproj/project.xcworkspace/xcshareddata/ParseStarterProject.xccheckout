@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7B143512-5865-454B-B75A-4FAA7CE598EF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ParseStarterProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DCF95F73-B3E7-4846-94F9-B2D44F3C857F</key>
+		<string>https://github.com/josh-of-all-trades/Howlr.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ParseStarterProject/ParseStarterProject.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DCF95F73-B3E7-4846-94F9-B2D44F3C857F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/josh-of-all-trades/Howlr.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DCF95F73-B3E7-4846-94F9-B2D44F3C857F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DCF95F73-B3E7-4846-94F9-B2D44F3C857F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Howlr</string>
+		</dict>
+	</array>
+</dict>
+</plist>
