@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		371CB23218FEF95600DD430F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB23118FEF95600DD430F /* Foundation.framework */; };
+		371CB23418FEF95600DD430F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB23318FEF95600DD430F /* CoreGraphics.framework */; };
+		371CB23618FEF95600DD430F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB23518FEF95600DD430F /* UIKit.framework */; };
+		371CB23818FEF95600DD430F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB23718FEF95600DD430F /* CoreData.framework */; };
+		371CB23E18FEF95600DD430F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 371CB23C18FEF95600DD430F /* InfoPlist.strings */; };
+		371CB24018FEF95600DD430F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 371CB23F18FEF95600DD430F /* main.m */; };
+		371CB24418FEF95600DD430F /* JERAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 371CB24318FEF95600DD430F /* JERAppDelegate.m */; };
+		371CB24718FEF95600DD430F /* Howlr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 371CB24518FEF95600DD430F /* Howlr.xcdatamodeld */; };
+		371CB24918FEF95600DD430F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371CB24818FEF95600DD430F /* Images.xcassets */; };
+		371CB25018FEF95600DD430F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB24F18FEF95600DD430F /* XCTest.framework */; };
+		371CB25118FEF95600DD430F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB23118FEF95600DD430F /* Foundation.framework */; };
+		371CB25218FEF95600DD430F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB23518FEF95600DD430F /* UIKit.framework */; };
+		371CB25318FEF95600DD430F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB23718FEF95600DD430F /* CoreData.framework */; };
+		371CB25B18FEF95600DD430F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 371CB25918FEF95600DD430F /* InfoPlist.strings */; };
+		371CB25D18FEF95600DD430F /* HowlrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 371CB25C18FEF95600DD430F /* HowlrTests.m */; };
+		371CB26818FEF98200DD430F /* JERLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371CB26718FEF98200DD430F /* JERLogInViewController.m */; };
+		371CB26B18FEF9C400DD430F /* JERSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371CB26A18FEF9C400DD430F /* JERSignUpViewController.m */; };
+		371CB26D18FEFA5100DD430F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371CB26C18FEFA5100DD430F /* Storyboard.storyboard */; };
+		371CB26F18FEFB5A00DD430F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB26E18FEFB5A00DD430F /* Parse.framework */; };
+		371CB27118FEFB6B00DD430F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB27018FEFB6B00DD430F /* FacebookSDK.framework */; };
+		371CB27318FEFB9900DD430F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB27218FEFB9900DD430F /* AudioToolbox.framework */; };
+		371CB27518FEFBA200DD430F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB27418FEFBA200DD430F /* CFNetwork.framework */; };
+		371CB27718FEFBB400DD430F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB27618FEFBB400DD430F /* CoreLocation.framework */; };
+		371CB27918FEFBBF00DD430F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB27818FEFBBF00DD430F /* libz.dylib */; };
+		371CB27B18FEFBC900DD430F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB27A18FEFBC900DD430F /* MobileCoreServices.framework */; };
+		371CB27D18FEFBD000DD430F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB27C18FEFBD000DD430F /* QuartzCore.framework */; };
+		371CB27F18FEFBD700DD430F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB27E18FEFBD700DD430F /* Security.framework */; };
+		371CB28118FEFBE000DD430F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB28018FEFBE000DD430F /* StoreKit.framework */; };
+		371CB28318FEFBEA00DD430F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB28218FEFBEA00DD430F /* SystemConfiguration.framework */; };
+		3753706C1906E7BB00816553 /* JERProfileShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3753706B1906E7BB00816553 /* JERProfileShowViewController.m */; };
+		3753706F1906EAB900816553 /* JERProfileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3753706E1906EAB900816553 /* JERProfileEditViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		371CB25418FEF95600DD430F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371CB22618FEF95600DD430F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 371CB22D18FEF95600DD430F;
+			remoteInfo = Howlr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		371CB22E18FEF95600DD430F /* Howlr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howlr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		371CB23118FEF95600DD430F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		371CB23318FEF95600DD430F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		371CB23518FEF95600DD430F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		371CB23718FEF95600DD430F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		371CB23B18FEF95600DD430F /* Howlr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Howlr-Info.plist"; sourceTree = "<group>"; };
+		371CB23D18FEF95600DD430F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		371CB23F18FEF95600DD430F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		371CB24118FEF95600DD430F /* Howlr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Howlr-Prefix.pch"; sourceTree = "<group>"; };
+		371CB24218FEF95600DD430F /* JERAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JERAppDelegate.h; sourceTree = "<group>"; };
+		371CB24318FEF95600DD430F /* JERAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JERAppDelegate.m; sourceTree = "<group>"; };
+		371CB24618FEF95600DD430F /* Howlr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Howlr.xcdatamodel; sourceTree = "<group>"; };
+		371CB24818FEF95600DD430F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		371CB24E18FEF95600DD430F /* HowlrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowlrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		371CB24F18FEF95600DD430F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		371CB25818FEF95600DD430F /* HowlrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HowlrTests-Info.plist"; sourceTree = "<group>"; };
+		371CB25A18FEF95600DD430F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		371CB25C18FEF95600DD430F /* HowlrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HowlrTests.m; sourceTree = "<group>"; };
+		371CB26618FEF98200DD430F /* JERLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERLogInViewController.h; sourceTree = "<group>"; };
+		371CB26718FEF98200DD430F /* JERLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERLogInViewController.m; sourceTree = "<group>"; };
+		371CB26918FEF9C400DD430F /* JERSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERSignUpViewController.h; sourceTree = "<group>"; };
+		371CB26A18FEF9C400DD430F /* JERSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERSignUpViewController.m; sourceTree = "<group>"; };
+		371CB26C18FEFA5100DD430F /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
+		371CB26E18FEFB5A00DD430F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		371CB27018FEFB6B00DD430F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		371CB27218FEFB9900DD430F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		371CB27418FEFBA200DD430F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		371CB27618FEFBB400DD430F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		371CB27818FEFBBF00DD430F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		371CB27A18FEFBC900DD430F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		371CB27C18FEFBD000DD430F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		371CB27E18FEFBD700DD430F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		371CB28018FEFBE000DD430F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		371CB28218FEFBEA00DD430F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3753706A1906E7BB00816553 /* JERProfileShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERProfileShowViewController.h; sourceTree = "<group>"; };
+		3753706B1906E7BB00816553 /* JERProfileShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERProfileShowViewController.m; sourceTree = "<group>"; };
+		3753706D1906EAB900816553 /* JERProfileEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERProfileEditViewController.h; sourceTree = "<group>"; };
+		3753706E1906EAB900816553 /* JERProfileEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERProfileEditViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		371CB22B18FEF95600DD430F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371CB28318FEFBEA00DD430F /* SystemConfiguration.framework in Frameworks */,
+				371CB28118FEFBE000DD430F /* StoreKit.framework in Frameworks */,
+				371CB27F18FEFBD700DD430F /* Security.framework in Frameworks */,
+				371CB27D18FEFBD000DD430F /* QuartzCore.framework in Frameworks */,
+				371CB27B18FEFBC900DD430F /* MobileCoreServices.framework in Frameworks */,
+				371CB27918FEFBBF00DD430F /* libz.dylib in Frameworks */,
+				371CB27718FEFBB400DD430F /* CoreLocation.framework in Frameworks */,
+				371CB23418FEF95600DD430F /* CoreGraphics.framework in Frameworks */,
+				371CB27518FEFBA200DD430F /* CFNetwork.framework in Frameworks */,
+				371CB27318FEFB9900DD430F /* AudioToolbox.framework in Frameworks */,
+				371CB23818FEF95600DD430F /* CoreData.framework in Frameworks */,
+				371CB23618FEF95600DD430F /* UIKit.framework in Frameworks */,
+				371CB23218FEF95600DD430F /* Foundation.framework in Frameworks */,
+				371CB26F18FEFB5A00DD430F /* Parse.framework in Frameworks */,
+				371CB27118FEFB6B00DD430F /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		371CB24B18FEF95600DD430F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371CB25018FEF95600DD430F /* XCTest.framework in Frameworks */,
+				371CB25318FEF95600DD430F /* CoreData.framework in Frameworks */,
+				371CB25218FEF95600DD430F /* UIKit.framework in Frameworks */,
+				371CB25118FEF95600DD430F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		371CB22518FEF95600DD430F = {
+			isa = PBXGroup;
+			children = (
+				371CB23918FEF95600DD430F /* Howlr */,
+				371CB25618FEF95600DD430F /* HowlrTests */,
+				371CB23018FEF95600DD430F /* Frameworks */,
+				371CB22F18FEF95600DD430F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		371CB22F18FEF95600DD430F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				371CB22E18FEF95600DD430F /* Howlr.app */,
+				371CB24E18FEF95600DD430F /* HowlrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		371CB23018FEF95600DD430F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				371CB28218FEFBEA00DD430F /* SystemConfiguration.framework */,
+				371CB28018FEFBE000DD430F /* StoreKit.framework */,
+				371CB27E18FEFBD700DD430F /* Security.framework */,
+				371CB27C18FEFBD000DD430F /* QuartzCore.framework */,
+				371CB27A18FEFBC900DD430F /* MobileCoreServices.framework */,
+				371CB27818FEFBBF00DD430F /* libz.dylib */,
+				371CB27618FEFBB400DD430F /* CoreLocation.framework */,
+				371CB27418FEFBA200DD430F /* CFNetwork.framework */,
+				371CB27218FEFB9900DD430F /* AudioToolbox.framework */,
+				371CB27018FEFB6B00DD430F /* FacebookSDK.framework */,
+				371CB26E18FEFB5A00DD430F /* Parse.framework */,
+				371CB23118FEF95600DD430F /* Foundation.framework */,
+				371CB23318FEF95600DD430F /* CoreGraphics.framework */,
+				371CB23518FEF95600DD430F /* UIKit.framework */,
+				371CB23718FEF95600DD430F /* CoreData.framework */,
+				371CB24F18FEF95600DD430F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		371CB23918FEF95600DD430F /* Howlr */ = {
+			isa = PBXGroup;
+			children = (
+				371CB26C18FEFA5100DD430F /* Storyboard.storyboard */,
+				3753706A1906E7BB00816553 /* JERProfileShowViewController.h */,
+				3753706B1906E7BB00816553 /* JERProfileShowViewController.m */,
+				371CB24218FEF95600DD430F /* JERAppDelegate.h */,
+				371CB24318FEF95600DD430F /* JERAppDelegate.m */,
+				371CB26618FEF98200DD430F /* JERLogInViewController.h */,
+				371CB26718FEF98200DD430F /* JERLogInViewController.m */,
+				371CB26918FEF9C400DD430F /* JERSignUpViewController.h */,
+				371CB26A18FEF9C400DD430F /* JERSignUpViewController.m */,
+				3753706D1906EAB900816553 /* JERProfileEditViewController.h */,
+				3753706E1906EAB900816553 /* JERProfileEditViewController.m */,
+				371CB24818FEF95600DD430F /* Images.xcassets */,
+				371CB24518FEF95600DD430F /* Howlr.xcdatamodeld */,
+				371CB23A18FEF95600DD430F /* Supporting Files */,
+			);
+			path = Howlr;
+			sourceTree = "<group>";
+		};
+		371CB23A18FEF95600DD430F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				371CB23B18FEF95600DD430F /* Howlr-Info.plist */,
+				371CB23C18FEF95600DD430F /* InfoPlist.strings */,
+				371CB23F18FEF95600DD430F /* main.m */,
+				371CB24118FEF95600DD430F /* Howlr-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		371CB25618FEF95600DD430F /* HowlrTests */ = {
+			isa = PBXGroup;
+			children = (
+				371CB25C18FEF95600DD430F /* HowlrTests.m */,
+				371CB25718FEF95600DD430F /* Supporting Files */,
+			);
+			path = HowlrTests;
+			sourceTree = "<group>";
+		};
+		371CB25718FEF95600DD430F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				371CB25818FEF95600DD430F /* HowlrTests-Info.plist */,
+				371CB25918FEF95600DD430F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		371CB22D18FEF95600DD430F /* Howlr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 371CB26018FEF95600DD430F /* Build configuration list for PBXNativeTarget "Howlr" */;
+			buildPhases = (
+				371CB22A18FEF95600DD430F /* Sources */,
+				371CB22B18FEF95600DD430F /* Frameworks */,
+				371CB22C18FEF95600DD430F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Howlr;
+			productName = Howlr;
+			productReference = 371CB22E18FEF95600DD430F /* Howlr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		371CB24D18FEF95600DD430F /* HowlrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 371CB26318FEF95600DD430F /* Build configuration list for PBXNativeTarget "HowlrTests" */;
+			buildPhases = (
+				371CB24A18FEF95600DD430F /* Sources */,
+				371CB24B18FEF95600DD430F /* Frameworks */,
+				371CB24C18FEF95600DD430F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				371CB25518FEF95600DD430F /* PBXTargetDependency */,
+			);
+			name = HowlrTests;
+			productName = HowlrTests;
+			productReference = 371CB24E18FEF95600DD430F /* HowlrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		371CB22618FEF95600DD430F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JER;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Joshua Rojas";
+				TargetAttributes = {
+					371CB24D18FEF95600DD430F = {
+						TestTargetID = 371CB22D18FEF95600DD430F;
+					};
+				};
+			};
+			buildConfigurationList = 371CB22918FEF95600DD430F /* Build configuration list for PBXProject "Howlr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 371CB22518FEF95600DD430F;
+			productRefGroup = 371CB22F18FEF95600DD430F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				371CB22D18FEF95600DD430F /* Howlr */,
+				371CB24D18FEF95600DD430F /* HowlrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		371CB22C18FEF95600DD430F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371CB23E18FEF95600DD430F /* InfoPlist.strings in Resources */,
+				371CB24918FEF95600DD430F /* Images.xcassets in Resources */,
+				371CB26D18FEFA5100DD430F /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		371CB24C18FEF95600DD430F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371CB25B18FEF95600DD430F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		371CB22A18FEF95600DD430F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371CB26818FEF98200DD430F /* JERLogInViewController.m in Sources */,
+				371CB24418FEF95600DD430F /* JERAppDelegate.m in Sources */,
+				371CB26B18FEF9C400DD430F /* JERSignUpViewController.m in Sources */,
+				3753706C1906E7BB00816553 /* JERProfileShowViewController.m in Sources */,
+				371CB24718FEF95600DD430F /* Howlr.xcdatamodeld in Sources */,
+				3753706F1906EAB900816553 /* JERProfileEditViewController.m in Sources */,
+				371CB24018FEF95600DD430F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		371CB24A18FEF95600DD430F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371CB25D18FEF95600DD430F /* HowlrTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		371CB25518FEF95600DD430F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 371CB22D18FEF95600DD430F /* Howlr */;
+			targetProxy = 371CB25418FEF95600DD430F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		371CB23C18FEF95600DD430F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				371CB23D18FEF95600DD430F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		371CB25918FEF95600DD430F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				371CB25A18FEF95600DD430F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		371CB25E18FEF95600DD430F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		371CB25F18FEF95600DD430F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		371CB26118FEF95600DD430F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Howlr/Howlr-Prefix.pch";
+				INFOPLIST_FILE = "Howlr/Howlr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		371CB26218FEF95600DD430F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Howlr/Howlr-Prefix.pch";
+				INFOPLIST_FILE = "Howlr/Howlr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		371CB26418FEF95600DD430F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Howlr.app/Howlr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Howlr/Howlr-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HowlrTests/HowlrTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		371CB26518FEF95600DD430F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Howlr.app/Howlr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Howlr/Howlr-Prefix.pch";
+				INFOPLIST_FILE = "HowlrTests/HowlrTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		371CB22918FEF95600DD430F /* Build configuration list for PBXProject "Howlr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371CB25E18FEF95600DD430F /* Debug */,
+				371CB25F18FEF95600DD430F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		371CB26018FEF95600DD430F /* Build configuration list for PBXNativeTarget "Howlr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371CB26118FEF95600DD430F /* Debug */,
+				371CB26218FEF95600DD430F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		371CB26318FEF95600DD430F /* Build configuration list for PBXNativeTarget "HowlrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371CB26418FEF95600DD430F /* Debug */,
+				371CB26518FEF95600DD430F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		371CB24518FEF95600DD430F /* Howlr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				371CB24618FEF95600DD430F /* Howlr.xcdatamodel */,
+			);
+			currentVersion = 371CB24618FEF95600DD430F /* Howlr.xcdatamodel */;
+			path = Howlr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 371CB22618FEF95600DD430F /* Project object */;
+}
