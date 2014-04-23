@@ -26,6 +26,10 @@
     // Override point for customization after application launch.
     //self.window.backgroundColor = [UIColor whiteColor];
     //[self.window makeKeyAndVisible];
+    [PFUser logOut];
+    [PFImageView class];
+    
+
     return YES;
 }
 
@@ -55,6 +59,9 @@
 {
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+    [PFUser logOut];
+    PFUser *currentUser = [PFUser currentUser];
+    
 }
 
 - (void)saveContext

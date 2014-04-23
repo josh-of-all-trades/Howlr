@@ -38,6 +38,7 @@
 		371CB28318FEFBEA00DD430F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB28218FEFBEA00DD430F /* SystemConfiguration.framework */; };
 		3753706C1906E7BB00816553 /* JERProfileShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3753706B1906E7BB00816553 /* JERProfileShowViewController.m */; };
 		3753706F1906EAB900816553 /* JERProfileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3753706E1906EAB900816553 /* JERProfileEditViewController.m */; };
+		3753707219076F8300816553 /* JERCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3753707119076F8300816553 /* JERCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		3753706B1906E7BB00816553 /* JERProfileShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERProfileShowViewController.m; sourceTree = "<group>"; };
 		3753706D1906EAB900816553 /* JERProfileEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERProfileEditViewController.h; sourceTree = "<group>"; };
 		3753706E1906EAB900816553 /* JERProfileEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERProfileEditViewController.m; sourceTree = "<group>"; };
+		3753707019076F8300816553 /* JERCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERCollectionViewController.h; sourceTree = "<group>"; };
+		3753707119076F8300816553 /* JERCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				371CB26C18FEFA5100DD430F /* Storyboard.storyboard */,
+				3753707019076F8300816553 /* JERCollectionViewController.h */,
+				3753707119076F8300816553 /* JERCollectionViewController.m */,
 				3753706A1906E7BB00816553 /* JERProfileShowViewController.h */,
 				3753706B1906E7BB00816553 /* JERProfileShowViewController.m */,
 				371CB24218FEF95600DD430F /* JERAppDelegate.h */,
@@ -321,6 +326,7 @@
 				371CB24418FEF95600DD430F /* JERAppDelegate.m in Sources */,
 				371CB26B18FEF9C400DD430F /* JERSignUpViewController.m in Sources */,
 				3753706C1906E7BB00816553 /* JERProfileShowViewController.m in Sources */,
+				3753707219076F8300816553 /* JERCollectionViewController.m in Sources */,
 				371CB24718FEF95600DD430F /* Howlr.xcdatamodeld in Sources */,
 				3753706F1906EAB900816553 /* JERProfileEditViewController.m in Sources */,
 				371CB24018FEF95600DD430F /* main.m in Sources */,

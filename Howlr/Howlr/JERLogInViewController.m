@@ -29,6 +29,7 @@
 - (void) previousField;
 - (void) resignKeyboard;
 
+@property (nonatomic, strong) PFUser *currentUser;
 
 
 @end
@@ -50,6 +51,8 @@
     passwordField.inputAccessoryView = self.keyboardToolbar;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.currentUser = [PFUser currentUser];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,9 +76,7 @@
                                                                   cancelButtonTitle:@"Cancel"
                                                                   otherButtonTitles:@"Ok", nil];
                                             [alert show];
-                                            NSLog(@"whyyy???");
-//                                            JERProfileShowViewController *profileShow = [self.storyboard instantiateViewControllerWithIdentifier:@"LoggedIn"];
-//                                            [self.navigationController pushViewController:profileShow animated:YES];
+                                            self.currentUser = [PFUser currentUser];
                                             [self performSegueWithIdentifier:@"LoggedIn" sender:self];
                                         } else {
                                             // The login failed. Check error to see why.
@@ -121,9 +122,10 @@
                                   cancelButtonTitle:@"Ok"
                                   otherButtonTitles:nil, nil];
             [alert show];
-            JERProfileShowViewController *profileShow = [self.storyboard instantiateViewControllerWithIdentifier:@"LoggedIn"];
-            [self.navigationController pushViewController:profileShow animated:YES];
-            
+            self.currentUser = [PFUser currentUser];
+
+            [self performSegueWithIdentifier:@"LoggedIn" sender:self];
+
         } else {
             UIAlertView *alert = [[UIAlertView alloc]
                                   initWithTitle:@"Success"
@@ -132,8 +134,9 @@
                                   cancelButtonTitle:@"Ok"
                                   otherButtonTitles:nil, nil];
             [alert show];
-            JERProfileShowViewController *profileShow = [self.storyboard instantiateViewControllerWithIdentifier:@"LoggedIn"];
-            [self.navigationController pushViewController:profileShow animated:YES];
+            self.currentUser = [PFUser currentUser];
+
+            [self performSegueWithIdentifier:@"LoggedIn" sender:self];
         }
     }];
 }
@@ -243,15 +246,24 @@
 }
 
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"LoggedIn"]) {
-        
-        UINavigationController *navigationController = segue.destinationViewController;
-        JERProfileShowViewController *profileShow = [navigationController viewControllers][0];
-        //profileShow.delegate = self;
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([segue.identifier isEqualToString:@"LoggedIn"]) {
+//
+//        UINavigationController *navigationController = segue.destinationViewController;
+//        JERProfileShowViewController *profileShow = [navigationController viewControllers][0];
+//        //profileShow.delegate = self;
+//    }
+//}
+
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    if (self.currentUser == nil && [identifier isEqualToString:@"LoggedIn"]){
+        return NO;
     }
+    return YES;
 }
+
 
 
 /*

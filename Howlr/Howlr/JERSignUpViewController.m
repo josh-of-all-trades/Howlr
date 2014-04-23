@@ -55,6 +55,7 @@
     phoneNumberField.inputAccessoryView = self.keyboardToolbar;
 }
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -93,10 +94,10 @@
                                       cancelButtonTitle:@"Cancel"
                                       otherButtonTitles:nil, nil];
                 [alert show];
-                JERProfileShowViewController *profileShow = [self.storyboard instantiateViewControllerWithIdentifier:@"LoggedIn"];
-                [self.navigationController pushViewController:profileShow animated:YES];
+                PFUser *currentUser = [PFUser currentUser];
+                
+                [self performSegueWithIdentifier:@"LoggedIn" sender:self];
             } else {
-                NSString *errorString = [error userInfo][@"error"];
                 // Show the errorString somewhere and let the user try again.
                 UIAlertView *alert = [[UIAlertView alloc]
                                       initWithTitle:@"Error"

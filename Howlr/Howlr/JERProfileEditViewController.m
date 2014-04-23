@@ -15,9 +15,9 @@
     IBOutlet UITextField *nameField;
     IBOutlet UITextField *emailField;
     IBOutlet UITextField *phoneNumberField;
-    IBOutlet UIImageView *photo1Field;
-    IBOutlet UIImageView *photo2Field;
-    IBOutlet UIImageView *photo3Field;
+    IBOutlet PFImageView *photo1Field;
+    IBOutlet PFImageView *photo2Field;
+    IBOutlet PFImageView *photo3Field;
 }
 
 
@@ -46,7 +46,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     PFUser *currentUser = [PFUser currentUser];
-    [nameField setText:currentUser.username];
+    [nameField setText:[currentUser valueForKey:@"name"]];
     [emailField setText:currentUser.email];
     [phoneNumberField setText:[currentUser valueForKey:@"phoneNumber"]];
 }
@@ -63,10 +63,18 @@
 
 - (IBAction)doneButtonHit:(id)sender{
     PFUser *currentUser = [PFUser currentUser];
-    [currentUser setValue:nameField.text forKey:@"name"];
+    [currentUser setObject:nameField.text forKey:@"name"];
     [currentUser setEmail:emailField.text];
     [currentUser setUsername:emailField.text];
-    [currentUser setValue:phoneNumberField.text forKey:@"phoneNumber"];
+    [currentUser setObject:phoneNumberField.text forKey:@"phoneNumber"];
+    
+    NSData * photo1data = UIImageJPEGRepresentation(photo1Field.image, 0.05f);
+    PFFile *photo1File = [PFFile fileWithName:@"photo1.jpg" data:photo1data];
+    [photo1File saveInBackground];
+    [currentUser setObject:photo1File forKey:@"photo1"];
+
+    [currentUser saveEventually];
+
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
@@ -78,7 +86,7 @@
                                                     cancelButtonTitle:@"Cancel"
                                                destructiveButtonTitle:nil
                                                     otherButtonTitles:@"Take Picture", @"Choose Picture", nil];
-    [choosePhoto showInView:self.tabBarController.view];
+    [choosePhoto showInView:self.view];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex

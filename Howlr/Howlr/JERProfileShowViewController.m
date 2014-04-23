@@ -14,9 +14,9 @@
     IBOutlet UILabel *nameField;
     IBOutlet UILabel *emailField;
     IBOutlet UILabel *phoneNumberField;
-    IBOutlet UIImageView *photo1Field;
-    IBOutlet UIImageView *photo2Field;
-    IBOutlet UIImageView *photo3Field;
+    IBOutlet PFImageView *photo1Field;
+    IBOutlet PFImageView *photo2Field;
+    IBOutlet PFImageView *photo3Field;
 }
 
 @end
@@ -37,6 +37,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     PFUser *currentUser = [PFUser currentUser];
+    [nameField setText:[currentUser valueForKey:@"name"]];
+    [emailField setText:currentUser.email];
+    [phoneNumberField setText:[currentUser valueForKey:@"phoneNumber"]];
+    PFFile *photo1File = [currentUser valueForKey:@"photo1"];
+    photo1Field.file = photo1File;
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+     PFUser *currentUser = [PFUser currentUser];
     [nameField setText:[currentUser valueForKey:@"name"]];
     [emailField setText:currentUser.email];
     [phoneNumberField setText:[currentUser valueForKey:@"phoneNumber"]];
