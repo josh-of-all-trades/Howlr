@@ -59,9 +59,7 @@
 {
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
-    [PFUser logOut];
-    PFUser *currentUser = [PFUser currentUser];
-    
+    [PFUser logOut];    
 }
 
 - (void)saveContext

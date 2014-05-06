@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JERCollectionViewController : UICollectionViewController
+@interface JERCollectionViewController : UICollectionViewController {
+    NSMutableArray *gridImages;
+}
+
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+
 
 @end

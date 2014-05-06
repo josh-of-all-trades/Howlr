@@ -24,7 +24,6 @@
 		371CB25D18FEF95600DD430F /* HowlrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 371CB25C18FEF95600DD430F /* HowlrTests.m */; };
 		371CB26818FEF98200DD430F /* JERLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371CB26718FEF98200DD430F /* JERLogInViewController.m */; };
 		371CB26B18FEF9C400DD430F /* JERSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371CB26A18FEF9C400DD430F /* JERSignUpViewController.m */; };
-		371CB26D18FEFA5100DD430F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371CB26C18FEFA5100DD430F /* Storyboard.storyboard */; };
 		371CB26F18FEFB5A00DD430F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB26E18FEFB5A00DD430F /* Parse.framework */; };
 		371CB27118FEFB6B00DD430F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB27018FEFB6B00DD430F /* FacebookSDK.framework */; };
 		371CB27318FEFB9900DD430F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB27218FEFB9900DD430F /* AudioToolbox.framework */; };
@@ -36,9 +35,18 @@
 		371CB27F18FEFBD700DD430F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB27E18FEFBD700DD430F /* Security.framework */; };
 		371CB28118FEFBE000DD430F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB28018FEFBE000DD430F /* StoreKit.framework */; };
 		371CB28318FEFBEA00DD430F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371CB28218FEFBEA00DD430F /* SystemConfiguration.framework */; };
+		37292ABF1910B0F30095C93D /* JERTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37292ABE1910B0F30095C93D /* JERTableTableViewController.m */; };
+		37292AC21910B3830095C93D /* JERTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37292AC11910B3830095C93D /* JERTableViewCell.m */; };
+		373281791919345A009424B4 /* JERMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 373281781919345A009424B4 /* JERMessageViewController.m */; };
+		3732817C19193577009424B4 /* JERMessagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3732817B19193577009424B4 /* JERMessagesTableViewController.m */; };
+		3732817F19193592009424B4 /* JERMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3732817E19193592009424B4 /* JERMessageTableViewCell.m */; };
+		3732818219193A9F009424B4 /* JEROtherMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3732818119193A9F009424B4 /* JEROtherMessageViewController.m */; };
+		37348C51190D993E00F31CB2 /* JEROtherProfileShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37348C50190D993E00F31CB2 /* JEROtherProfileShowViewController.m */; };
+		37417B7D190DA744003F32D4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37417B7C190DA744003F32D4 /* Storyboard.storyboard */; };
 		3753706C1906E7BB00816553 /* JERProfileShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3753706B1906E7BB00816553 /* JERProfileShowViewController.m */; };
 		3753706F1906EAB900816553 /* JERProfileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3753706E1906EAB900816553 /* JERProfileEditViewController.m */; };
 		3753707219076F8300816553 /* JERCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3753707119076F8300816553 /* JERCollectionViewController.m */; };
+		37537075190A28F700816553 /* JERCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37537074190A28F700816553 /* JERCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +82,6 @@
 		371CB26718FEF98200DD430F /* JERLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERLogInViewController.m; sourceTree = "<group>"; };
 		371CB26918FEF9C400DD430F /* JERSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERSignUpViewController.h; sourceTree = "<group>"; };
 		371CB26A18FEF9C400DD430F /* JERSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERSignUpViewController.m; sourceTree = "<group>"; };
-		371CB26C18FEFA5100DD430F /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
 		371CB26E18FEFB5A00DD430F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		371CB27018FEFB6B00DD430F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		371CB27218FEFB9900DD430F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -86,12 +93,29 @@
 		371CB27E18FEFBD700DD430F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		371CB28018FEFBE000DD430F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		371CB28218FEFBEA00DD430F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		37292ABD1910B0F30095C93D /* JERTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERTableTableViewController.h; sourceTree = "<group>"; };
+		37292ABE1910B0F30095C93D /* JERTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERTableTableViewController.m; sourceTree = "<group>"; };
+		37292AC01910B3830095C93D /* JERTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERTableViewCell.h; sourceTree = "<group>"; };
+		37292AC11910B3830095C93D /* JERTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERTableViewCell.m; sourceTree = "<group>"; };
+		373281771919345A009424B4 /* JERMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERMessageViewController.h; sourceTree = "<group>"; };
+		373281781919345A009424B4 /* JERMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERMessageViewController.m; sourceTree = "<group>"; };
+		3732817A19193577009424B4 /* JERMessagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERMessagesTableViewController.h; sourceTree = "<group>"; };
+		3732817B19193577009424B4 /* JERMessagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERMessagesTableViewController.m; sourceTree = "<group>"; };
+		3732817D19193592009424B4 /* JERMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERMessageTableViewCell.h; sourceTree = "<group>"; };
+		3732817E19193592009424B4 /* JERMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERMessageTableViewCell.m; sourceTree = "<group>"; };
+		3732818019193A9F009424B4 /* JEROtherMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEROtherMessageViewController.h; sourceTree = "<group>"; };
+		3732818119193A9F009424B4 /* JEROtherMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEROtherMessageViewController.m; sourceTree = "<group>"; };
+		37348C4F190D993E00F31CB2 /* JEROtherProfileShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEROtherProfileShowViewController.h; sourceTree = "<group>"; };
+		37348C50190D993E00F31CB2 /* JEROtherProfileShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEROtherProfileShowViewController.m; sourceTree = "<group>"; };
+		37417B7C190DA744003F32D4 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
 		3753706A1906E7BB00816553 /* JERProfileShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERProfileShowViewController.h; sourceTree = "<group>"; };
 		3753706B1906E7BB00816553 /* JERProfileShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERProfileShowViewController.m; sourceTree = "<group>"; };
 		3753706D1906EAB900816553 /* JERProfileEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERProfileEditViewController.h; sourceTree = "<group>"; };
 		3753706E1906EAB900816553 /* JERProfileEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERProfileEditViewController.m; sourceTree = "<group>"; };
 		3753707019076F8300816553 /* JERCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERCollectionViewController.h; sourceTree = "<group>"; };
 		3753707119076F8300816553 /* JERCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERCollectionViewController.m; sourceTree = "<group>"; };
+		37537073190A28F700816553 /* JERCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JERCollectionViewCell.h; sourceTree = "<group>"; };
+		37537074190A28F700816553 /* JERCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JERCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +200,23 @@
 		371CB23918FEF95600DD430F /* Howlr */ = {
 			isa = PBXGroup;
 			children = (
-				371CB26C18FEFA5100DD430F /* Storyboard.storyboard */,
+				37417B7C190DA744003F32D4 /* Storyboard.storyboard */,
+				373281771919345A009424B4 /* JERMessageViewController.h */,
+				373281781919345A009424B4 /* JERMessageViewController.m */,
+				3732818019193A9F009424B4 /* JEROtherMessageViewController.h */,
+				3732818119193A9F009424B4 /* JEROtherMessageViewController.m */,
+				3732817A19193577009424B4 /* JERMessagesTableViewController.h */,
+				3732817B19193577009424B4 /* JERMessagesTableViewController.m */,
+				3732817D19193592009424B4 /* JERMessageTableViewCell.h */,
+				3732817E19193592009424B4 /* JERMessageTableViewCell.m */,
+				37292ABD1910B0F30095C93D /* JERTableTableViewController.h */,
+				37292ABE1910B0F30095C93D /* JERTableTableViewController.m */,
+				37292AC01910B3830095C93D /* JERTableViewCell.h */,
+				37292AC11910B3830095C93D /* JERTableViewCell.m */,
+				37348C4F190D993E00F31CB2 /* JEROtherProfileShowViewController.h */,
+				37348C50190D993E00F31CB2 /* JEROtherProfileShowViewController.m */,
+				37537073190A28F700816553 /* JERCollectionViewCell.h */,
+				37537074190A28F700816553 /* JERCollectionViewCell.m */,
 				3753707019076F8300816553 /* JERCollectionViewController.h */,
 				3753707119076F8300816553 /* JERCollectionViewController.m */,
 				3753706A1906E7BB00816553 /* JERProfileShowViewController.h */,
@@ -303,7 +343,7 @@
 			files = (
 				371CB23E18FEF95600DD430F /* InfoPlist.strings in Resources */,
 				371CB24918FEF95600DD430F /* Images.xcassets in Resources */,
-				371CB26D18FEFA5100DD430F /* Storyboard.storyboard in Resources */,
+				37417B7D190DA744003F32D4 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,11 +363,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				371CB26818FEF98200DD430F /* JERLogInViewController.m in Sources */,
+				3732818219193A9F009424B4 /* JEROtherMessageViewController.m in Sources */,
+				37537075190A28F700816553 /* JERCollectionViewCell.m in Sources */,
 				371CB24418FEF95600DD430F /* JERAppDelegate.m in Sources */,
 				371CB26B18FEF9C400DD430F /* JERSignUpViewController.m in Sources */,
 				3753706C1906E7BB00816553 /* JERProfileShowViewController.m in Sources */,
 				3753707219076F8300816553 /* JERCollectionViewController.m in Sources */,
+				3732817C19193577009424B4 /* JERMessagesTableViewController.m in Sources */,
+				37348C51190D993E00F31CB2 /* JEROtherProfileShowViewController.m in Sources */,
+				373281791919345A009424B4 /* JERMessageViewController.m in Sources */,
+				3732817F19193592009424B4 /* JERMessageTableViewCell.m in Sources */,
+				37292ABF1910B0F30095C93D /* JERTableTableViewController.m in Sources */,
 				371CB24718FEF95600DD430F /* Howlr.xcdatamodeld in Sources */,
+				37292AC21910B3830095C93D /* JERTableViewCell.m in Sources */,
 				3753706F1906EAB900816553 /* JERProfileEditViewController.m in Sources */,
 				371CB24018FEF95600DD430F /* main.m in Sources */,
 			);

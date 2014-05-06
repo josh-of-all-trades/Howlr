@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Howlr": {
+            "applicationId": "FY4O2Fmne8tPiPKQA6GdlFyyD0T1WSuEAoFZ127Y", 
+            "masterKey": "0muDWYy6ydDxzUbnki2doM9b3Aoq8HTeY2wKeU1L"
+        }, 
+        "_default": {
+            "link": "Howlr"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.18"
+    }
+}

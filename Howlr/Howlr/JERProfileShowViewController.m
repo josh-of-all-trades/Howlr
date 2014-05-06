@@ -15,8 +15,8 @@
     IBOutlet UILabel *emailField;
     IBOutlet UILabel *phoneNumberField;
     IBOutlet PFImageView *photo1Field;
-    IBOutlet PFImageView *photo2Field;
-    IBOutlet PFImageView *photo3Field;
+    //IBOutlet PFImageView *photo2Field;
+    //IBOutlet PFImageView *photo3Field;
 }
 
 @end
@@ -42,6 +42,7 @@
     [phoneNumberField setText:[currentUser valueForKey:@"phoneNumber"]];
     PFFile *photo1File = [currentUser valueForKey:@"photo1"];
     photo1Field.file = photo1File;
+    [photo1Field loadInBackground];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -49,6 +50,9 @@
     [nameField setText:[currentUser valueForKey:@"name"]];
     [emailField setText:currentUser.email];
     [phoneNumberField setText:[currentUser valueForKey:@"phoneNumber"]];
+    PFFile *photo1File = [currentUser valueForKey:@"photo1"];
+    photo1Field.file = photo1File;
+    [photo1Field loadInBackground];
 }
 
 - (void)didReceiveMemoryWarning

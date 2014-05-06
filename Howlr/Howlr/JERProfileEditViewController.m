@@ -16,8 +16,8 @@
     IBOutlet UITextField *emailField;
     IBOutlet UITextField *phoneNumberField;
     IBOutlet PFImageView *photo1Field;
-    IBOutlet PFImageView *photo2Field;
-    IBOutlet PFImageView *photo3Field;
+    //IBOutlet PFImageView *photo2Field;
+    //IBOutlet PFImageView *photo3Field;
 }
 
 
@@ -27,6 +27,8 @@
 - (IBAction)choosePhoto:(id)sender;
 - (void)takePicture;
 - (void)choosePicture;
+
+
 
 @end
 
@@ -40,6 +42,10 @@
     }
     return self;
 }
+
+
+
+
 
 - (void)viewDidLoad
 {
@@ -67,12 +73,18 @@
     [currentUser setEmail:emailField.text];
     [currentUser setUsername:emailField.text];
     [currentUser setObject:phoneNumberField.text forKey:@"phoneNumber"];
+    [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
+        [currentUser setObject:geoPoint forKey:@"location"];
+        [currentUser saveEventually];
+    }];
     
     NSData * photo1data = UIImageJPEGRepresentation(photo1Field.image, 0.05f);
     PFFile *photo1File = [PFFile fileWithName:@"photo1.jpg" data:photo1data];
-    [photo1File saveInBackground];
+    
+    [photo1File save];
+    
     [currentUser setObject:photo1File forKey:@"photo1"];
-
+    
     [currentUser saveEventually];
 
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -149,6 +161,42 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
                                              otherButtonTitles:nil, nil];
     [noCamera show];
     [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)saveImageToDisk:(UIImage *)imageToSave {
+    
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docs = [paths objectAtIndex:0];
+    
+    //replace this with the appropriate image name.  Maybe random?
+    NSString *nextName = [[NSString alloc] initWithFormat:@"/photo1.jpg"];
+    NSString *path = [docs stringByAppendingString:nextName];
+    
+    
+    NSData *imageData = [NSData dataWithData:UIImageJPEGRepresentation(imageToSave, 80)];
+    NSError *writeError = nil;
+    [imageData writeToFile:path options:NSDataWritingAtomic error:&writeError];
+    
+    if(writeError!=nil){
+        NSLog(@"%@: Error saving image: %@", [self class], [writeError localizedDescription]);
+    }
+}
+
+
+
+- (void)locationManager:(CLLocationManager *)manager
+       didFailWithError:(NSError *)error
+{
+    
+    UIAlertView *privaceErrorMessage = [[UIAlertView alloc] initWithTitle:@"No Access"
+                                                                  message:@"Sorry but our app does not have access to your location.  Please change this in Settings->Privacy->Location"
+                                                                 delegate:nil
+                                                        cancelButtonTitle:@"OK"
+                                                        otherButtonTitles:nil];
+    
+    [privaceErrorMessage show];
+    
 }
 
 /*

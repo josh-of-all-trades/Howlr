@@ -17,6 +17,7 @@
     IBOutlet UITextField *passwordConfirmField;
     IBOutlet UITextField *nameField;
     IBOutlet UITextField *phoneNumberField;
+    
 }
 
 //IBActions
@@ -31,6 +32,8 @@
 - (void) previousField;
 - (void) resignKeyboard;
 
+
+
 @end
 
 @implementation JERSignUpViewController
@@ -44,6 +47,9 @@
     return self;
 }
 
+
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -53,6 +59,7 @@
     passwordConfirmField.inputAccessoryView = self.keyboardToolbar;
     nameField.inputAccessoryView = self.keyboardToolbar;
     phoneNumberField.inputAccessoryView = self.keyboardToolbar;
+
 }
 
 
@@ -83,19 +90,24 @@
         user.password = password1;
         user[@"name"] = nameField.text;
         user[@"phoneNumber"] = phoneNumberField.text;
-        
+        user[@"likes"] = [[NSArray alloc] init];
+        user[@"blockList"] = [[NSArray alloc] init];
+
+
         [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {
+                [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
+                    user[@"location"] = geoPoint;
+                    [user save];
+                }];
                 // Hooray! Let them use the app now.
                 UIAlertView *alert = [[UIAlertView alloc]
                                       initWithTitle:@"Sign up"
                                       message:@"Hurray you signed up!"
                                       delegate:self
-                                      cancelButtonTitle:@"Cancel"
+                                      cancelButtonTitle:@"Ok"
                                       otherButtonTitles:nil, nil];
                 [alert show];
-                PFUser *currentUser = [PFUser currentUser];
-                
                 [self performSegueWithIdentifier:@"LoggedIn" sender:self];
             } else {
                 // Show the errorString somewhere and let the user try again.
@@ -241,6 +253,24 @@
     self.view.frame = viewFrame;
     
     [UIView commitAnimations];
+}
+
+
+
+
+
+- (void)locationManager:(CLLocationManager *)manager
+       didFailWithError:(NSError *)error
+{
+    
+    UIAlertView *privaceErrorMessage = [[UIAlertView alloc] initWithTitle:@"No Access"
+                                                                  message:@"Sorry but our app does not have access to your location.  Please change this in Settings->Privacy->Location"
+                                                                 delegate:nil
+                                                        cancelButtonTitle:@"OK"
+                                                        otherButtonTitles:nil];
+    
+    [privaceErrorMessage show];
+    
 }
 
 /*
