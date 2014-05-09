@@ -78,9 +78,13 @@
 
 -(IBAction)likeButtonHit:(id)sender{
     NSMutableArray *likes = [self.cellUser valueForKey:@"likes"];
+    NSString *status;
     if ([likes containsObject:[[PFUser currentUser] objectId]]){
         //do nothing
+        status = @"unliked";
+        [likes removeObject:[[PFUser currentUser] objectId]];
     } else {
+        status = @"liked";
         [likes addObject:[[PFUser currentUser] objectId]];
     }
    
@@ -91,13 +95,14 @@
     [PFCloud callFunction:@"updateLikes" withParameters:cloudDic];
 //    [PFCloud callFunctionInBackground:@"updateLikes" withParameters:cloudDic block:^(id object, NSError *error) {
 //        if(!error){
+    NSString *alertTitle = [NSString stringWithFormat:@"Profile %@", status];
+    NSString *alertMessage = [NSString stringWithFormat:@"You have %@ this user's profile", status];
     
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Profile Liked"
-                                                            message:@"You have liked this user's profile"
-                                                           delegate:nil
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle
+                                                            message:alertMessage                                                           delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
-            [alert show];
+    [alert show];
             
 //        }
 //    }];
@@ -106,10 +111,13 @@
 
 - (IBAction)blockButtonHit:(id)sender{
     NSMutableArray *blocks = [self.cellUser valueForKey:@"blockList"];
+    NSString *status;
     if ([blocks containsObject:[[PFUser currentUser] objectId]]){
-        //do nothing
+        [blocks removeObject:[[PFUser currentUser] objectId]];
+        status = @"unblocked";
     } else {
         [blocks addObject:[[PFUser currentUser] objectId]];
+        status = @"blocked";
     }
     
     NSMutableDictionary *cloudDic = [[NSMutableDictionary alloc] init];
@@ -118,8 +126,11 @@
     
     [PFCloud callFunction:@"block" withParameters:cloudDic];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Profile blocked"
-                                                    message:@"You have liked this user's profile"
+    NSString *alertTitle = [NSString stringWithFormat:@"Profile %@", status];
+    NSString *alertMessage = [NSString stringWithFormat:@"You have %@ this user's profile", status];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle
+                                                    message:alertMessage
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];

@@ -1,1 +1,11 @@
-The first README for HOWLR!
+Howlr an app for dogs to meet dogs!
+
+When you open the app you are taken to the login page.  Here you can enter your login credentials and log into the app.  If you don’t have an account you can hit the signup button and you are taken to a new screen where you can sign up with the app.  On the signup screen, you enter your credentials and then hit sign up and you are signed up and logged in.  Another option is to login with Facebook.  To do so, simply hit the login with Facebook button on the login page.
+
+When you are successfully logged in you are taken to the profile view page.  Here it shows you your name, email, phone number, and profile picture (if you have one).  If you need to change your information you can click the edit button in the upper right corner.  This takes you to a very similar screen except that every field is editable. You can hit cancel to leave this screen and go back to the view screen or hit done to save your changes and go back to the view screen.
+
+The bottom of the view screen shows other tabs.  The next tab is the Dashboard.  If you click on this tab it will show you all the other users of Howlr (with the users you have blocked removed from the list).  This list is supposed to be sorted by geolocation but PFQueries don’t support subQueries where one of them includes location.  If you click on any of the users you are taken to their profile.  On their profile you can click on their email to send them an email, their phone number to give them a call, or the message icon to send them an in-app message.  You can also hit the like or block buttons to like/unlike or block/unblock respectively.
+
+The next tab is the likes tab.  It shows you which users have liked you and if you click on their name it takes you to their profile.  You have the same access as described in the section above when viewing their profile.
+
+The last tab is the Messages tab.  If you come to this tab it shows you an inbox of all the messages you have received.  If you click on a message it pulls up a message view screen so you can see who messaged you and what the message says.

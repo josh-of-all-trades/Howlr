@@ -185,7 +185,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="Icon-Small" id="cff-bQ-2mS"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="home" id="cff-bQ-2mS"/>
                     <connections>
                         <outlet property="emailField" destination="oxd-BK-q5Y" id="Au0-aE-z6W"/>
                         <outlet property="nameField" destination="MwA-iI-9hW" id="Pdq-Qe-GzM"/>
@@ -348,13 +348,13 @@
                             <outlet property="delegate" destination="e3b-On-1Lu" id="g0L-bE-FkM"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Messages" image="Icon-Small" id="25I-Dt-Q94"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="empty inbox" id="25I-Dt-Q94"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcx-Ib-uCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-35" y="1173"/>
         </scene>
-        <!--Table Table View Controller - Likes-->
+        <!--Table Table View Controller-->
         <scene sceneID="7nQ-4s-beP">
             <objects>
                 <tableViewController id="pqb-U6-yr8" customClass="JERTableTableViewController" sceneMemberID="viewController">
@@ -377,7 +377,7 @@
                             <outlet property="delegate" destination="pqb-U6-yr8" id="cqd-Z5-wk1"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Likes" image="Icon-Small" id="fqO-dz-cpW"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="fqO-dz-cpW"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZB-fg-6CA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -388,18 +388,18 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="S9R-SF-Lyg" customClass="JERCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="px6-hu-Xu3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fza-qK-Xpf">
                             <size key="itemSize" width="60" height="60"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="50" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="2" minY="50" maxX="2" maxY="4"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="center" restorationIdentifier="0" reuseIdentifier="myCell" id="ebF-Ug-3e3" customClass="JERCollectionViewCell">
-                                <rect key="frame" x="0.0" y="50" width="60" height="60"/>
+                                <rect key="frame" x="2" y="114" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -422,10 +422,7 @@
                             <outlet property="delegate" destination="S9R-SF-Lyg" id="cbd-kP-jhZ"/>
                         </connections>
                     </collectionView>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBarItem key="tabBarItem" title="Dashboard" image="Icon-Small" id="X6x-2S-BxH"/>
-                    <navigationItem key="navigationItem" title="Dashboard" id="7zL-ln-n3L"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="grid" id="X6x-2S-BxH"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -868,7 +865,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon-Small" width="29" height="29"/>
+        <image name="empty inbox" width="30" height="30"/>
+        <image name="grid" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
